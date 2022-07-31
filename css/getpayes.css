@@ -1,0 +1,177 @@
+
+:root{
+    --color-dark-green:#33691E;
+    --color-light-green:#689F38;
+    --green:#6fda44;
+    --dark-blue:#1A237E;
+}
+.main{
+    width: 100%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+}
+.main .main_container{
+    max-width: 1100px;
+    width: 100%;
+    padding: 1rem;
+    background: transparent;
+    position: relative;
+}
+.main .main_container .row{
+display: flex;
+flex-wrap: wrap;
+margin: 0rem .5rem;
+}
+.main .main_container .row .left_navigation{
+flex: 1 1 8rem;
+}
+.main .main_container .row .right_box{
+flex: 2 2 30rem;
+padding: 1rem !important;
+margin: 1.4rem 1rem;
+padding-top: 0;
+margin-top: 0;
+}
+.main .main_container .row .right_box .top_heading{
+    color: #000 ;
+font-size: 1.4rem;
+padding-bottom: 1rem;
+padding-left: .5rem;
+}
+.main .main_container .row .left_navigation ul{
+padding:1rem;
+    }
+.main .main_container .row .left_navigation ul li{
+font-size: 14px;
+margin: 10px 0;
+}
+.main .main_container .row .left_navigation ul li:hover{
+    border-left: 2px solid var(--dark-blue);
+    padding-left: 12px;
+    }
+.main .main_container .row .left_navigation ul li.title h3{
+color: #010101;
+}
+.main .main_container .row .left_navigation ul li a{
+color: #010101;
+}
+.main .main_container .row .left_navigation ul li a:hover{
+color: var(--dark-blue);
+}
+.main .main_container .row .right_box .box1{
+    padding: 1.5rem 1rem;
+    background: #fff;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 5px;
+    padding-bottom: .5rem;
+    margin: 1.5rem 0;
+    margin-top: 0;
+    
+}
+.main .main_container .row .right_box .box1 .heading{ 
+    background: #fff;
+    color: var(--dark-blue) ;
+font-size: 1.1rem;
+font-weight:normal;
+padding-bottom: 1rem;
+}
+.main .main_container .row .right_box .box1 .footer{
+    padding: .5rem;
+    padding-top: 1.5rem;
+    background: #fff;
+    border-top: 1px solid rgb(182, 182, 182);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.main .main_container .row .right_box .box1 .footer p{
+    font-size: .8rem;
+}
+.main .main_container .row .right_box .box1 .footer p span{
+    color: var(--dark-blue);
+    margin-left: .5rem;
+    font-size: 18px;
+}
+.main .main_container .row .right_box .box1 .footer a{
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    background: rgb(182, 182, 182);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.main .main_container .row .right_box .box2{
+    padding: 1.5rem 1rem;
+    background: #fff;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 5px;
+    padding-bottom: 1rem;
+}
+.main .main_container .row .right_box .box2 .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding-top: .5rem;
+  border-bottom: 1px solid rgb(182, 182, 182);
+  flex-wrap: wrap;
+}
+.main .main_container .row .right_box .box2 .header h1{
+    background: #fff;
+    color: var(--dark-blue) ;
+font-size: 1.4rem
+}
+.main .main_container .row .right_box .box2 .header a{
+    padding: 5px 12px;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 5px;
+    background: var(--dark-blue);
+}
+.main .main_container .row .right_box .box2 .content{
+   padding-top: 1rem;
+}
+.main .main_container .row .right_box .box2 .content h3{
+    font-size: 18px;
+}
+.main .main_container .row .right_box .box2 .content p{
+    font-size: 15px;
+    padding: 1rem 0;
+}
+@media (max-width:700px) {
+    .main .main_container .row .left_navigation ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        padding-left: 1.5rem;
+            }
+    .main .main_container .row .left_navigation ul li
+    {
+margin-left: 1rem;  
+        
+}
+.main .main_container .row .right_box{
+    padding: 0;
+    width: 100%;
+}
+.main .main_container .row .left_navigation{
+    padding: 0;
+    width: 100%;
+}
+.main .main_container{
+    max-width: 1300px;
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    position: relative;
+}
+}

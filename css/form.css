@@ -1,0 +1,292 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --color-dark-green:#33691E;
+    --color-light-green:#689F38;
+    --green:darkgreen;  
+    --dark-blue:#1A237E;
+
+}
+::selection{
+    background: var(--color-dark-green);
+    color: #fff;
+}
+::-webkit-scrollbar-track
+{
+	/* -webkit-box-shadow: inset 0 0 15px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3),
+    inset 0 0 8px rgba(0,0,0,0.5),
+    inset 0 0 10px rgba(0,0,0,0.7),
+    ; */
+	background-color: #fff;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background: #fff;;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color:var(--color-dark-green);
+}
+/* Login Style Starts Here */
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+    background: linear-gradient(155deg, rgba(4, 33, 194, 0.651) 50%,rgba(80, 190, 15, 0.507)50%), url(../images/bg.jpg) no-repeat ;
+    background-size: cover;
+    background-position: center center;
+}
+
+.container  form{
+    width: 100%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 0 10px 0 10px;
+    /* box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5),
+                -2px -3px 6px rgba(255, 255, 255, 0.5) */
+    ;
+    backdrop-filter: blur(25px);
+    border: 2px solid;
+    border-color: rgba(255, 255, 255, 0.2);
+z-index: 10;
+}
+.container form::before{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    top: -.5%;
+    left: -.5%;
+    border-top: 5px solid #eee;
+    border-left: 5px solid #eee;
+    z-index: -1;
+    pointer-events: none;
+}
+.container form::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    bottom: -.5%;
+    right: -.5%;
+    border-bottom: 5px solid #eee;
+    border-right: 5px solid #eee;
+    z-index: -2;
+    pointer-events: none;
+}
+.container  form h3{
+font-size: 2rem;
+color:#eee;
+font-weight: 600;
+margin-bottom: .6rem;
+text-align: center;
+}
+.container form .line{
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    margin-bottom: .5rem;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.container form .line::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--green);
+    transition: width 1s linear;
+    border-radius: 20px;
+}
+.container form .line::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--dark-blue);
+    transition: width .7s linear;
+    border-radius: 20px;
+}
+.container form:hover .line::before{
+    width: 100%;
+    height: 100%;
+    transition: all 0.7s linear;
+}
+.container form:hover .line::after{
+    width: 100%;
+    height: 100%;
+    transition: all 1s linear;
+
+}
+
+.container  form .sub-heading{
+font-size: 1rem;
+color: #eee;
+font-weight: 500;
+margin-bottom: .6rem;
+text-align: center;
+}
+.container  form hr{
+    color: rgb(126, 124, 124);
+width: 100%;
+margin-bottom: 1rem;
+}
+.container form .input{
+    margin: 6px 0;
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container form .input p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 5px 0;
+    text-transform: capitalize;
+}
+.container form .input input{
+border: none;
+outline: none;
+padding: 5px 10px;
+font-size: 1.4rem;
+font-weight: 500;
+  background: rgb(228, 228, 228);
+  margin: 8px 0;
+  color:var(--color-dark-green);
+  border-radius: 2px;
+
+}
+.container form .input input::placeholder{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(95, 95, 95);
+}
+.container form .remember{
+  width: 100%;
+  align-items: center;
+  display: inline;
+}
+.container form .remember input{
+  width: 1rem;
+  height: 1rem;
+}
+.container form .remember label{
+  margin-left: 10px;
+  font-size: 16px;
+  color: #fff;
+
+}
+.container form button{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 1.5rem;
+    background: linear-gradient(145deg,rgba(6, 24, 121, 0.979),rgba(31, 61, 230, 0.986));
+    border-radius: 5px;
+    transition: all 1s ease;
+}
+.container form button:hover{
+cursor: pointer;
+background: linear-gradient(145deg,rgba(3, 15, 78, 0.979),rgba(20, 49, 218, 0.986));
+
+}
+.container form a{
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: .8rem;
+    color: #fff;
+    display: block;
+    font-weight: 500;
+}
+.container form a:hover{
+    color: var(--dark-blue)
+}
+/* Login Style Ends Here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    
+}
+
+@media (max-width:480px) {
+    .container  form{
+        width: 100%;
+        max-width: 500px;
+        padding: 1.5rem .8rem;
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 1rem;
+        background: linear-gradient(140deg, rgba(45, 129, 35, 0.651) 50%,rgba(0, 0, 0, 0.753)50%), url(../images/bg.jpg) no-repeat ;
+        background-size: cover;
+        background-position: center center;
+    }
+}

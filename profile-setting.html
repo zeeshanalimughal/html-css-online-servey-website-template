@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/Font-Awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/profile-settings.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+<div class="navbox">
+    <div class="warapper">
+        <i class="fa fa-bars" id="menu"></i>
+        <div class="logo">
+            <a href="home.html"><span>Do</span> Servey</a>
+        </div>
+            <div class="search_box">
+                <div class="icon">
+                    <i class="fa fa-search"></i>
+                </div>
+                <input type="text" class="search" name="search" placeholder="Search servey's">
+                <div class="cancel" id="cancel">
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+                <ul class="navigation">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="favorite.html">Favourite</a></li>
+                    <li><a href="#">Messages</a></li>
+                </ul>
+            <div class="socila_media">
+                <a href="#"><i class="fa fa-question"></i></a>
+                <a href="#"><i class="fa fa-bell"></i></a>
+                <a href="#"><i class="fa fa-paper-plane"></i></a>
+            </div>
+            <div class="image_box">
+                <img src="images/bg.jpg" alt="">
+                <ul>
+                    <li><a href="profile-setting.html"><i class="fa fa-user"></i> Profile</a></li>
+                    <li><a href="#"><i class="fa fa-user"></i> Deshboard</a></li>
+                    <li><a href="favorite.html"><i class="fa fa-user"></i> FAQ</a></li>
+                    <li><a href="get-payed.html"><i class="fa fa-user"></i> Settings</a></li>
+                    <li><a href="#"><i class="fa fa-user"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<br><br><br>
+
+<section class="main">
+    <div class="main_container">
+        <div class="row">
+            <div class="left_navigation">
+            <ul>
+                <li class="title"><h3>User Setting</h3></li>
+                <li><a href="#">Get started</a></li>
+                <li><a href="#">category</a></li>
+                <li><a href="#">Experties</a></li>
+                <li><a href="#">Experties level</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Employement</a></li>
+                <li><a href="#">Language</a></li>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Location</a></li>
+            </ul>
+        </div>
+        <div class="right_box">
+            <div class="header">
+                <h2>Title</h2>
+            </div>
+            <div class="desc">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptates eaque fugiat quaerat nostrum repellendus illo doloribus deleniti nulla ullam! Laudantium eligendi ullam ipsum modi culpa ipsam? Vel, non mollitia, iste consequatur, omnis nam explicabo laborum error laboriosam doloremque a.</p>
+
+            </div>
+            <div class="footer_btn">
+                <a href="#">Back</a>
+                <a href="#">Next</a>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<br><br><br>
+    <div class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae aliquid vitae, laboriosam iusto voluptatibus. Fugit temporibus veritatis eum quos inventore laboriosam, nesciunt delectus fugiat eos incidunt autem aperiam dolore!</p>
+            </div>
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">contact</a>
+                <a href="#">servey</a>
+                <a href="#">account</a>
+                <a href="#">events</a>
+            </div>
+    
+            <div class="box">
+                <h3>contact us</h3>
+                <p> <i class="fa fa-phone"></i> +123-456-7890. </p>
+                <p> <i class="fa fa-envelope"></i> example@gmail.com </p>
+                <p> <i class="fa fa-map-marker"></i> pakistan, punjab - 64200 </p>
+            </div>
+    
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">youtube</a>
+                <a href="#">linkedin</a>
+            </div>
+    
+        </div>
+    
+        <h3 class="credit"> created by <a href="#"> zeeshan ali </a> | all rights reserved! </h3>
+    
+    </div>
+    <script>
+        const box = document.querySelector('.image_box');
+        const menu = document.querySelector('#menu');
+        const navigation = document.querySelector('.navigation');
+         const searchBox = document.querySelector('.icon');
+         const cancel = document.querySelector('#cancel');
+        box.addEventListener('click',function(){
+            box.classList.toggle('active');
+        });
+        menu.addEventListener('click',function(){
+            navigation.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+        searchBox.addEventListener('click',()=>{
+            searchBox.parentElement.classList.add('active');
+        });
+        cancel.addEventListener('click',function(){
+            searchBox.parentElement.classList.remove('active');
+        });
+        
+            </script></body>
+</html>

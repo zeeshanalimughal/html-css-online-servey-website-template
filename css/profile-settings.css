@@ -1,0 +1,96 @@
+
+:root{
+    --color-dark-green:#33691E;
+    --color-light-green:#689F38;
+    --green:#6fda44;
+    --dark-blue:#1A237E;
+}
+.main{
+    width: 100%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+}
+.main .main_container{
+    max-width: 1100px;
+    width: 100%;
+    padding: 1rem;
+    background: transparent;
+    position: relative;
+}
+.main .main_container .row{
+display: flex;
+flex-wrap: wrap;
+margin: 1rem;
+}
+.main .main_container .row .left_navigation{
+flex: 1 1 8rem;
+}
+.main .main_container .row .right_box{
+flex: 2 2 30rem;
+padding: 1rem !important;
+}
+.main .main_container .row .left_navigation ul{
+padding: .5rem;
+    }
+.main .main_container .row .left_navigation ul li{
+font-size: 14px;
+margin: 10px 0;
+}
+.main .main_container .row .left_navigation ul li:hover{
+border-left: 2px solid var(--dark-blue);
+padding-left: 12px;
+}
+.main .main_container .row .left_navigation ul li.title h3{
+color: #010101;
+}
+.main .main_container .row .left_navigation ul li a{
+color: #010101;
+}
+.main .main_container .row .left_navigation ul li a:hover{
+color: var(--dark-blue);
+}
+.main .main_container .row .right_box .header{
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid gray;
+    font-size: 1.2rem;
+}
+.main .main_container .row .right_box .desc{
+    padding: 1rem;
+    background: #fff;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-top: none;
+}
+.main .main_container .row .right_box .footer_btn{
+    border: 1px solid gray;
+    border-top: none;
+    padding:  1.5rem 1rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.main .main_container .row .right_box .footer_btn a{
+    padding: 5px 20px;
+    border: 1px solid var(--dark-blue);
+    color: var(--dark-blue);
+    font-size: 1rem;
+}
+.main .main_container .row .right_box .footer_btn a:hover{
+   background: rgba(27, 47, 219, 0.664);
+   color:#fff;
+   cursor: pointer;
+}
+
+
+@media (max-width:670px) {
+    .main .main_container .row .left_navigation ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+            }
+    .main .main_container .row .left_navigation ul li{
+margin-left: 1rem;            }
+}
